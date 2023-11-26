@@ -2,7 +2,14 @@
 class Assets {
   Assets._();
 
+  static const String fontsMontserratBold = 'assets/fonts/Montserrat-Bold.ttf';
+  static const String fontsMontserratLight = 'assets/fonts/Montserrat-Light.ttf';
+  static const String fontsMontserratMedium = 'assets/fonts/Montserrat-Medium.ttf';
+  static const String fontsMontserratRegular = 'assets/fonts/Montserrat-Regular.ttf';
   static const String imagesFacebook = 'assets/images/facebook.jpg';
   static const String imagesGoogle = 'assets/images/google.jpg';
+  static const String imagesLab = 'assets/images/lab.png';
+  static const String imagesPug = 'assets/images/pug.jpg';
+  static const String imagesUser = 'assets/images/user.png';
 
 }
