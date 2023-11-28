@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_apps/dating_app/screens/dating_home_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'flutter_pet_adoption_ui/screens/pet_home_screen.dart';
 
@@ -22,6 +23,22 @@ class FlutterUiApps extends StatelessWidget {
   //   );
   // }
 
+
+  // For Pets Adoption UI
+  // @override
+  // Widget build(BuildContext context) {
+  //   return MaterialApp(
+  //     title: 'Flutter Ui Apps',
+  //     debugShowCheckedModeBanner: false,
+  //     theme: ThemeData(
+  //       useMaterial3: true,
+  //       textTheme: GoogleFonts.almaraiTextTheme(),
+  //     ),
+  //     home: const PetHomeScreen(),
+  //   );
+  // }
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,9 +46,9 @@ class FlutterUiApps extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-        textTheme: GoogleFonts.almaraiTextTheme(),
+        textTheme: GoogleFonts.acmeTextTheme()
       ),
-      home: const PetHomeScreen(),
+      home: const DatingHomeScreen()
     );
   }
 }
