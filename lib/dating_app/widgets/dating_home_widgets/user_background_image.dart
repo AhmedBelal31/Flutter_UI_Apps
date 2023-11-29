@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../theming/color.dart';
+import '../../theming/color.dart';
 
 class UserBackgroundImage extends StatelessWidget {
   const UserBackgroundImage({super.key});

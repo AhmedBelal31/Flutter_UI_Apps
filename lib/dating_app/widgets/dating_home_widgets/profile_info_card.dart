@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../theming/text_style.dart';
+import '../../theming/text_style.dart';
 
 class ProfileInfoCard extends StatelessWidget {
   const ProfileInfoCard({
