@@ -6,26 +6,32 @@ import '../widgets/home/pet_card.dart';
 class PetHomeScreen extends StatelessWidget {
   const PetHomeScreen({Key? key}) : super(key: key);
 
-  Widget _buildTF() => const TextField(
-        style: TextStyle(
-            fontSize: 30, color: Colors.black, fontWeight: FontWeight.bold),
-        decoration: InputDecoration(
-          border: InputBorder.none,
-          prefixIcon: Padding(
-            padding: EdgeInsets.only(right: 20),
-            child: Icon(
-              Icons.add_location,
-              size: 40,
+  Widget _buildTF() => const SizedBox(
+    height: 40,
+    child: TextField(
+          style: TextStyle(
+            fontSize: 20,
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+          ),
+          decoration: InputDecoration(
+            border: InputBorder.none,
+            prefixIcon: Padding(
+              padding: EdgeInsets.only(right: 20),
+              child: Icon(
+                Icons.add_location,
+                size: 40,
+              ),
+            ),
+            labelText: 'Location ',
+            labelStyle: TextStyle(
+                color: Colors.grey, fontWeight: FontWeight.w900, fontSize: 20),
+            contentPadding: EdgeInsets.only(
+              bottom: 20,
             ),
           ),
-          labelText: 'Location ',
-          labelStyle: TextStyle(
-              color: Colors.grey, fontWeight: FontWeight.w900, fontSize: 20),
-          contentPadding: EdgeInsets.only(
-            bottom: 20,
-          ),
         ),
-      );
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +39,7 @@ class PetHomeScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(top: 30, left: 40, bottom: 40),
+          padding: const EdgeInsets.only(top: 20, left: 10, bottom: 20),
           child: GestureDetector(
             onTap: () {
               FocusScope.of(context).unfocus();
@@ -47,10 +53,10 @@ class PetHomeScreen extends StatelessWidget {
                     radius: 20,
                     backgroundImage: AssetImage(pets[0].owner.imageUrl),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 30),
                   _buildTF(),
                   const SizedBox(height: 10),
-                  const Divider(height: 2),
+                  const Divider(height: 20),
                   const CategoryList(),
                   PetCard(pet: pets[0]),
                   PetCard(

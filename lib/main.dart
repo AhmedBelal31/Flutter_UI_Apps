@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_apps/dating_app/screens/dating_home_screen.dart';
+import 'package:flutter_ui_apps/registration_screens_ui/screens/login_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'flutter_pet_adoption_ui/screens/pet_home_screen.dart';
 
@@ -10,21 +11,21 @@ void main() {
 
 class FlutterUiApps extends StatelessWidget {
   const FlutterUiApps({super.key});
-  // For Login UI
-  // @override
-  // Widget build(BuildContext context) {
-  //   return MaterialApp(
-  //     title: 'Flutter Ui Apps',
-  //     debugShowCheckedModeBanner: false,
-  //     theme: ThemeData.dark().copyWith(
-  //         textTheme:
-  //             GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme)),
-  //     home: const LoginScreen(),
-  //   );
-  // }
+ // For Login UI
+ //  @override
+ //  Widget build(BuildContext context) {
+ //    return MaterialApp(
+ //      title: 'Flutter Ui Apps',
+ //      debugShowCheckedModeBanner: false,
+ //      theme: ThemeData.dark().copyWith(
+ //          textTheme:
+ //              GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme)),
+ //      home: const LoginScreen(),
+ //    );
+ //  }
 
 
-  // For Pets Adoption UI
+  // //For Pets Adoption UI
   // @override
   // Widget build(BuildContext context) {
   //   return MaterialApp(
