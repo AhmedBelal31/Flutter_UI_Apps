@@ -27,7 +27,7 @@ class PetCard extends StatelessWidget {
           Hero(
             tag: pet.id,
             child: Padding(
-              padding: const EdgeInsets.only(bottom: 30, top: 30),
+              padding: const EdgeInsets.only(bottom: 20, top: 20),
               child: Container(
                 width: double.infinity,
                 height: 250,

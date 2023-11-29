@@ -23,7 +23,7 @@ class AdoptPetScreen extends StatelessWidget {
               pet: pet,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 30),
+              padding: const EdgeInsets.only(left: 10),
               child: Column(
                 children: [
                   const SizedBox(height: 30),
