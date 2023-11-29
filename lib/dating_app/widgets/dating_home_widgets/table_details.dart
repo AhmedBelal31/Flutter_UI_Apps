@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_apps/dating_app/screens/super_liked_me.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../theming/color.dart';
+import '../../theming/color.dart';
 import 'profile_info_card.dart';
 
 class TableDetails extends StatelessWidget {
@@ -10,9 +11,9 @@ class TableDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Table(
       children: [
-        const TableRow(
+        TableRow(
           children: [
-            ProfileInfoCard(
+            const ProfileInfoCard(
               icon: Icon(
                 Icons.star,
                 color: primaryColor,
@@ -21,14 +22,23 @@ class TableDetails extends StatelessWidget {
               title: '13',
               subTitle: 'New Matches',
             ),
-            ProfileInfoCard(
-              icon: Icon(
-                Icons.favorite,
-                color: primaryColor,
-                size: 25,
+            InkWell(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const SuperLikedMe(),
+                  ),
+                );
+              },
+              child: const ProfileInfoCard(
+                icon: Icon(
+                  Icons.favorite,
+                  color: primaryColor,
+                  size: 25,
+                ),
+                title: '42',
+                subTitle: 'Super Likes ',
               ),
-              title: '21',
-              subTitle: 'Unmatched Me ',
             ),
           ],
         ),
@@ -72,8 +82,8 @@ class TableDetails extends StatelessWidget {
                 color: primaryColor,
                 size: 25,
               ),
-              title: '42',
-              subTitle: 'Super Likes ',
+              title: '21',
+              subTitle: 'Unmatched Me ',
             ),
           ],
         ),
@@ -122,8 +132,6 @@ class TableDetails extends StatelessWidget {
             ),
           ],
         ),
-
-
       ],
     );
   }

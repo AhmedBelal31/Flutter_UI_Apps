@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_apps/dating_app/widgets/profile_info_card.dart';
+import 'package:flutter_ui_apps/dating_app/widgets/dating_home_widgets/profile_info_card.dart';
 
 class UserStatistics extends StatelessWidget {
   const UserStatistics({super.key});
