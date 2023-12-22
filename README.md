@@ -1,4 +1,4 @@
-# Fluuter UI APPS 
+# Flutter UI APPS 
 
 A new Flutter project.
 
